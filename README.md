@@ -1,6 +1,6 @@
 # Description
 
-a 3-step project using `SQS`, `SNS`, `Lambda`, `CloudWatch`, `Postgres` and infrastructure as code : 
+a 3-step project using `SQS`, `Lambda`, `CloudWatch`, `Postgres` and infrastructure as code : 
 - a new file containing tabular data is uploaded by a user to an s3 bucket in a specific folder (`new_data/`)
 - a cron will trigger a lambda that will move this file to another folder (`processing/`) so that an s3 event is generated
 - event message is sent to a lambda using SQS to feed a postgres table
