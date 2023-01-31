@@ -5,12 +5,17 @@ a 3-step project using `SQS`, `SNS`, `Lambda`, `CloudWatch`, `Postgres` and infr
 - a cron will trigger a lambda that will move this file to another folder (`processing/`) so that an s3 event is generated
 - event message is sent to a lambda using SQS to feed a postgres table
 
-# Dependencies
+# What is involved ?
 - `python` : the programming language that is used on the server side
 - `terraform` : is an open-source infrastructure as code software tool that enables you to safely and predictably create, change, and improve the infrastructure of this project
 - `LocalStack` : to run AWS applications or Lambdas entirely on a local machine without connecting to a remote cloud provider
 - `Docker` : to packages code and its dependencies so the application runs quickly and reliably across computing environments
 - `postgres` : an open source object-relational database system
+
+# What do I need to install before using this repo ?
+
+- `Docker`
+- internet connection
 
 # Quick start : 
 
