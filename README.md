@@ -1,6 +1,6 @@
 # Description
 
-a 3-step project using `SQS`, `SNS`, `Lambda`, `CloudWatch`, `Postgres` and infrastructure as code : 
+a 3-step project using `SQS`, `Lambda`, `CloudWatch`, `Postgres` and infrastructure as code : 
 - a new file containing tabular data is uploaded by a user to an s3 bucket in a specific folder (`new_data/`)
 - a cron will trigger a lambda that will move this file to another folder (`processing/`) so that an s3 event is generated
 - event message is sent to a lambda using SQS to feed a postgres table
@@ -12,14 +12,14 @@ a 3-step project using `SQS`, `SNS`, `Lambda`, `CloudWatch`, `Postgres` and infr
 - `Docker` : to packages code and its dependencies so the application runs quickly and reliably across computing environments
 - `postgres` : an open source object-relational database system
 
-# What do I need to install before using this repo ?
+# What do I need to use this repo ?
 
 - `Docker`
 - internet connection
 
 # Quick start : 
 
-- `make docker-compose` : builds image of the project and run containers (wait until terraform container finish its job)
+- `make docker-compose` : builds image of the project and runs containers (wait until terraform container finishes its job)
 - `make list-objects-in-bucket` : shows the content of your s3 bucket
 - `make list-lambda-functions ` : shows the list of your lambda functions
 - `make list-sqs-queues` : shows the list of your SQS queues
