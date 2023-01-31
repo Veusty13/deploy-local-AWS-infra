@@ -12,7 +12,7 @@ a 3-step project using `SQS`, `SNS`, `Lambda`, `CloudWatch`, `Postgres` and infr
 - `Docker` : to packages code and its dependencies so the application runs quickly and reliably across computing environments
 - `postgres` : an open source object-relational database system
 
-# What do I need to install before using this repo ?
+# What do I need to use this repo ?
 
 - `Docker`
 - internet connection
