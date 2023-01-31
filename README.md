@@ -19,7 +19,7 @@ a 3-step project using `SQS`, `SNS`, `Lambda`, `CloudWatch`, `Postgres` and infr
 
 # Quick start : 
 
-- `make docker-compose` : builds image of the project and run containers (wait until terraform container finish its job)
+- `make docker-compose` : builds image of the project and runs containers (wait until terraform container finishes its job)
 - `make list-objects-in-bucket` : shows the content of your s3 bucket
 - `make list-lambda-functions ` : shows the list of your lambda functions
 - `make send-new-data-to-bucket index_file=1` : sends a csv file to s3 bucket, there are 2 files in the project, write `index_file=2` if you want to send the other dataset
