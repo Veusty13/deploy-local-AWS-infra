@@ -22,6 +22,7 @@ a 3-step project using `SQS`, `SNS`, `Lambda`, `CloudWatch`, `Postgres` and infr
 - `make docker-compose` : builds image of the project and run containers (wait until terraform container finish its job)
 - `make list-objects-in-bucket` : shows the content of your s3 bucket
 - `make list-lambda-functions ` : shows the list of your lambda functions
+- `make list-sqs-queues` : shows the list of your SQS queues
 - `make send-new-data-to-bucket index_file=1` : sends a csv file to s3 bucket, there are 2 files in the project, write `index_file=2` if you want to send the other dataset
 - `make test-lambda function_name=trigger-processing-function` : invokes lambda `trigger-processing-function` which is in charge to move datasets from folder `new_data/` to folder `processing` which triggers an s3 event notification
 - `make query-table-read` or `make query-table-count` to check if the table has been updated
