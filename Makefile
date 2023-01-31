@@ -43,3 +43,9 @@ test-lambda :
 	docker exec -it graph-project-local-stack awslocal lambda invoke \
 		--function-name $(function_name) \
 		./output_test.log
+
+query-table-read : 
+	docker exec -it graph-project-postgres psql -U postgres -d graph_project -c "select * from transactions;"
+
+query-table-count : 
+	docker exec -it graph-project-postgres psql -U postgres -d graph_project -c "select count(*) from transactions;"
