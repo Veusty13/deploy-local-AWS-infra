@@ -25,4 +25,4 @@ a 3-step project using `SQS`, `Lambda`, `CloudWatch`, `Postgres` and infrastruct
 - `make list-sqs-queues` : shows the list of your SQS queues
 - `make send-new-data-to-bucket index_file=1` : sends a csv file to s3 bucket, there are 2 files in the project, write `index_file=2` if you want to send the other dataset
 - `make test-lambda function_name=trigger-processing-function` : invokes lambda `trigger-processing-function` which is in charge to move datasets from folder `new_data/` to folder `processing` which triggers an s3 event notification
-- `make query-table-read` or `make query-table-count` to check if the table has been updated
+- `make query-table-read` or `make query-table-count` to check if the table has been indeed updated
